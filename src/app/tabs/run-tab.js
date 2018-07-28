@@ -431,10 +431,8 @@ function settings (container, appAPI, appEvents, opts) {
       <div class="${css.col1_1}">Value</div>
         <input type="text" class="${css.col2_1}" id="value" value="0" title="Enter the value and choose the unit">
         <select name="unit" class="${css.col2_2}" id="unit">
-          <option data-unit="wei">wei</option>
-          <option data-unit="gwei">gwei</option>
-          <option data-unit="finney">finney</option>
-          <option data-unit="ether">ether</option>
+          <option data-unit="drop">drop</option>
+          <option data-unit="trx">trx</option>
         </select>
       </div>
     </div>

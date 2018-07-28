@@ -186,6 +186,9 @@ function SettingsTab (appAPI = {}, appEvents = {}, opts = {}) {
   header.selected = true
   versionSelector.appendChild(header)
 
+  loadVersion('builtin', queryParams, opts.compiler, el);
+
+  /*
   request.get({
     url: 'https://solc-bin.ethereum.org/bin/list.json',
     json: true
@@ -219,6 +222,7 @@ function SettingsTab (appAPI = {}, appEvents = {}, opts = {}) {
 
     loadVersion(selectedVersion, queryParams, opts.compiler, el)
   })
+  */
 
   return { render () { return el } }
 }

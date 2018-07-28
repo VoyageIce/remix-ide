@@ -278,15 +278,11 @@ Please make a backup of your contracts and start using http://remix.ethereum.org
         var select = document.getElementById('unit')
         var index = select.selectedIndex
         var selectedUnit = select.querySelectorAll('option')[index].dataset.unit
-        var unit = 'ether' // default
-        if (selectedUnit === 'ether') {
-          unit = 'ether'
-        } else if (selectedUnit === 'finney') {
-          unit = 'finney'
-        } else if (selectedUnit === 'gwei') {
-          unit = 'gwei'
-        } else if (selectedUnit === 'wei') {
-          unit = 'wei'
+        var unit = 'trx' // default
+        if (selectedUnit === 'trx') {
+          unit = 'trx'
+        } else if (selectedUnit === 'drop') {
+          unit = 'drop'
         }
         cb(null, executionContext.web3().toWei(number, unit))
       } catch (e) {
